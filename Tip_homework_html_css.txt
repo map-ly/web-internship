@@ -1,0 +1,8 @@
+HTML + css
+
+width: %;
+display: flex; | Flexbix css
+media :
+max-width 576px 2 column
+max-width 768px 3 column
+max-width 1200px 4 column
