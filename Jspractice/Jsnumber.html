@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>number practice</title>
+    <style>
+       
+    
+    </style>
+</head>
+<body>
+        <!-- //JavaScript exspect result-->
+
+        <h2>JavaScript Numbers</h2>
+
+        <p>A common mistake is to expect this result to be 102030:</p>
+        <p id="value"></p>
+        
+        <!-- Javascript culculate-->
+        <h2>JavaScript Numbers</h2>
+
+        <p>Infinity is returned if you calculate a number outside the largest possible number:</p>
+        
+        <p id="demo"></p>
+        
+        <script>
+            //JavaScript exspect result
+        var x = 10;
+        var y = 20;
+        var z = "30";
+        var result = x + y + z;
+        document.getElementById("value").innerHTML = result;
+
+        //JavaScript calculate number
+        var myNumber = 2; 
+        var txt = "";
+        while (myNumber != Infinity) {
+           myNumber = myNumber * myNumber;
+           txt = txt + myNumber + "<br>";
+        }
+        document.getElementById("demo").innerHTML = txt;
+        </script>
+   
+</body>
+</html>
