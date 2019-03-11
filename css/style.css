@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  img {
+	display: block;
+	border: 0;
+	width: 100%;
+	height: auto;
+}
+  
+ 
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      height: auto;
+      
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    
+    padding: 2px;
+    background-color: #f1f1f1;
+  }
+ 
+  
+  .button {
+    background-color: cadetblue;
+    border: 1px solid;
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 4px;
+    cursor: pointer;
+  }
