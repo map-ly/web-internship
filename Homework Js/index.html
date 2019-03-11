@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Homework</title>
+</head>
+<body>
+        <div id="wrapper">
+                <form method="POST" action="index.php" onsubmit="return Validate()" name="vform" >
+                    <div id="username_div">
+                      <label>Username</label> <br>
+                      <input type="text" name="username" class="textInput">
+                      <div id="name_error"></div>
+                    </div>
+                    <div id="email_div">
+                      <label>Email</label> <br>
+                      <input type="email" name="email" class="textInput">
+                      <div id="email_error"></div>
+                    </div>
+                    <div id="phone_div">
+                      <label>Phone</label> <br>
+                      <input type="number" name="phone" class="textInput">
+                    </div>
+                    <div>
+                    <input type="submit" name="register" value="Register" class="btn">
+                    </div>
+                </form>
+               </div>
+        
+        <script>
+           // SELECTING ALL TEXT ELEMENTS
+var username = document.forms['vform']['username'];
+var email = document.forms['vform']['email'];
+var phone = document.forms['vform']['phone'];
+
+// SELECTING ALL ERROR DISPLAY ELEMENTS
+var name_error = document.getElementById('name_error');
+var email_error = document.getElementById('email_error');
+var phone_error = document.getelementById('phone_error');
+// SETTING ALL EVENT LISTENERS
+username.addEventListener('blur', nameVerify, true);
+email.addEventListener('blur', emailVerify, true);
+phone.addEventListener('blur', phoneVerify, true);
+
+// validation function
+function Validate() {
+  // validate username
+  if (username.value == "") {
+    username.style.border = "1px solid red";
+    document.getElementById('username_div').style.color = "red";
+    name_error.textContent = "Username is required";
+    username.focus();
+    return false;
+  }
+  // validate username
+  if (username.value.length < 3) {
+    username.style.border = "1px solid red";
+    document.getElementById('username_div').style.color = "red";
+    name_error.textContent = "Username must be at least 3 characters";
+    username.focus();
+    return false;
+  }
+  // validate email
+  if (email.value == "") {
+    email.style.border = "1px solid red";
+    document.getElementById('email_div').style.color = "red";
+    email_error.textContent = "Email is required";
+    email.focus();
+    return false;
+  }
+ 
+}
+// event handler functions
+function nameVerify() {
+  if (username.value != "") {
+   username.style.border = "1px solid #5e6e66";
+   document.getElementById('username_div').style.color = "#5e6e66";
+   name_error.innerHTML = "";
+   return true;
+  }
+}
+function emailVerify() {
+  if (email.value != "") {
+  	email.style.border = "1px solid #5e6e66";
+  	document.getElementById('email_div').style.color = "#5e6e66";
+  	email_error.innerHTML = "";
+  	return true;
+  }
+
+  if (phone.value != ""){
+      phone.style.border = "1px solid #5e6e66";
+      document.getElementById('phone.dev').style.color = "#5e6e66";
+      phone_error.innerHTML = "";
+      return true;
+        } 
+      
+  document.getElementById("register").innerHTML = 
+    alert('Correct');
+}
+
+        </script>
+
+
+</body>
+</html>
