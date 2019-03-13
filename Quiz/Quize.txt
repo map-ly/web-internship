@@ -1,0 +1,143 @@
+1. how to write array in js?
+
+2. how to write object in js?
+
+3. how to add cat to array in js ?
+
+4. how to join/merge array dog and woft in js?
+
+5. how to remove item from array ?
+
+6. how does splice() can do  ?
+
+7. how many systax for loop and write it ?
+
+8. what syntax use to see in F12 console ?
+
+9. what syntax use to popup alert window message ?
+
+10. what syntax for shorthand if else ?
+
+11. write code to check  10 equal to "10" and same type ?
+
+12. how many way to get Elements ?
+
+13. create 2 object literal, 1 with a function return fullname, 2 has object first name & last name and call object 1 to get full name ?
+14. write how to click button and alert message "Button is Clicked" 
+
+
+answer:
+1. var computer = ["Dell", "Acer", "Lenovo"];
+
+2. var person = "tall";
+
+3. var list = ["Dell", "Acer"];
+    list.push("Lenovo");
+   
+
+4. function myFunction() {
+    var computer = ["Dell", "Acer", "Lenovo", "Asus"];
+    var x = document.getElementById("demo");
+    x.innerHTML = computer.join();
+
+5. var computer = ["Dell", "Acer", "Lenovo", "Asus"];
+	document.getElementById("demo").innerHTML = computer;
+
+	function myFunction() {
+	computer.shift();
+	document.getElementById("demo").innerHTML = computer;
+6. The slice() method returns the selected elements in an array, as a new array object.
+7. syntax for loop 
+	- for
+	- for/in
+	- while
+	- do/while
+*For
+	for (statement 1; statement 2; statement 3) {
+  	// code block to be executed
+	}
+
+	var text = "";
+	var i;
+	for (i = 0; i < 5; i++) {
+  	text += "The number is " + i + "<br>";
+
+*For/In Loop
+	var person ={fname:"Map", lname:"Ly", age:24};
+	var text ="";
+	var x;
+	for (x in person){
+	text += person[x];
+	}
+*while
+		
+	while (condition) {
+	// code block to be executed
+	
+	}
+	while (i<10){
+	text += "The number is" + i;
+	i++;
+	
+	}
+*do	{
+	//code executed
+	}
+	while (condition);
+	do{
+	  text += "The number is" + i;
+	  i++;
+	}
+	while (i<10);
+	}
+8. The console.log() Method
+	console.log()
+	var x = 15 * 5;
+	debugger;
+	document.getElementById("demo").innerHTML = x;
+
+9. window.confirm("sometext");
+
+10. if (condition) {
+  	//  block of code to be executed if the condition is true
+	}
+	if (hour < 18) {
+  	greeting = "Good day";
+	}
+
+	if (condition) {
+  	//  block of code is true
+	} else { 
+ 	//  block of code is false
+	}
+
+11. 	var str = "10";
+        var num = 10;
+    
+        if (10  === "10"){
+        alert("num 10 equal string 10");
+            }
+
+13. <p id="demo"></p>
+    <script>
+    var firstname = "Ly";
+    var lastname = "Map";
+    var x = firstname  + lastname;
+    document.getElementById("demo").innerHTML = x;
+    </script>
+12. 3ways to get element.
+	-by('id')
+	-by ('class')
+	-by ('function')
+
+14. <input type="button" id="button" value="To Click here" onclick="btn_Click()"/>
+    <script>
+    function btn_Click(){
+    alert("Clicked");
+    }
+    </script>
+
+  
+
+
+	
