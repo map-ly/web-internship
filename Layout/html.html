@@ -7,65 +7,60 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-        <ul>
-                <li><a class="active" href="#home">Home</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#sign up">Sign Up</a></li>
-              </ul>
+<div style="height: 1500px;" id="content"></div>
+<!-- <header> -->
+  <div class="area">
+        <h3 id="scroll">Booking</h3>
+        </div>
+<!-- </header> -->
 
-<header>
-        <h3 id="scrol" style="position:fixed">Booking</h3>
-</header>
-
-<section>
-  <nav>
-    <ul>
-      <li><a href="#">London</a></li>
-      <li><a href="#">Paris</a></li>
-      <li><a href="#">Tokyo</a></li>
-    </ul>
-  </nav>
-  
-  <article>
-    <h1>London</h1>
-    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-    
-  </article>
-  
-
-</section>
-
-<footer>
+<footer id="footer" style="height: 150px">
   <p>Footer</p>
 </footer>
 
+<style>
+body {
+  margin: 0;
+  position: relative;
+}
+</style>
 <script>
-        //window.onscroll = function() {myFunction()};
-        
-        //function myFunction() {
-         // if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-          //  document.getElementById("scrol").className = "alert";
-         // } else {
-          //  document.getElementById("scrol").className = "";
-         // }
-       // }
-       function countbooking(){
-         var countElem = document.getElementById('scrol');
-         var scrollValue = window.pageYOoffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-         var wrapper = document.getElementById('counten').clientHeight;
-         var footer = document.getElementById('footer').clientHeight;
-         countElem.style.display = 'none';
-         if (scrollValue > 100){
-           countElem.style.display='';
-         }
-       }
-       countbooking();
-       window.addEventListener('scroll', function(e){
-         countbooking();
-       })
+        function getHeight(ele) {
+          var h = ele.innerHeight
+            || ele.clientHeight
+            || ele.clientHeight;
+          return h;
+        }
+        window.onscroll = function() {
+          var d = document.documentElement;
+          var w = Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop);
+          var s = document.getElementById('scroll');
+          var c = document.getElementById('content');
+          var f = getHeight(document.getElementById('footer'));
+          var off = getHeight(c) - (f*2);
+          var newW = off - w;
+          s.style.display = 'none';
+          if (w > 100) s.style.display = '';
+          if (w >  newW) {
+            console.log('At the bottom');
+            s.style.display = 'none';
+          }
+        };
+      //  function countbooking(){
+      //    var countElem = document.getElementById('scrol');
+      //    var scrollValue = window.pageYOoffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+      //    var wrapper = document.getElementById('counten').clientHeight;
+      //    var footer = document.getElementById('footer').clientHeight;
+      //    countElem.style.display = 'none';
+      //    if (scrollValue > 100){
+      //      countElem.style.display='';
+      //    }
+      //  }
+      //  countbooking();
+      //  window.addEventListener('scroll', function(e){
+      //    countbooking();
+      //  })
+      
         </script>
 
 </body>
