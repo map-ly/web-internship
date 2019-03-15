@@ -40,8 +40,6 @@
                 $failed = false;
             }
         }
-
-      
         function test_input($data){
             $data = trim($data);
             $data = stripcslashes($data);
@@ -51,7 +49,7 @@
         ?>
         <h3>Form Validate</h3>
         <form method ="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-            Name: <input type="text" name="name"  maxlength="10" minlength="3" value="<?php echo ($failed) ? $name : ''; ?>">
+            Name: <input type="text" name="name" value="<?php echo ($failed) ? $name : ''; ?>">
             <span class="error">*<?php echo $nameErr;?></span>
             <br><br>
             Phone: <input type="text" name="phone" value="<?php echo ($failed) ? $phone : ''; ?>">
@@ -61,7 +59,7 @@
             <span class="error" >* <?php echo $emailErr;?></span>
             <br><br>
             Message: <br>
-            <textarea name="comment" maxlength="25" ><?php echo ($failed) ? $comment : ''; ?></textarea>
+            <textarea name="comment" ><?php echo ($failed) ? $comment : ''; ?></textarea>
             <span class="error" >* <?php echo $commentErr;?></span>
             <br><br>
             <input type="submit" name="submit" value="submit">
@@ -75,5 +73,3 @@
         ?>     
     </body>
 </html>
-
-
