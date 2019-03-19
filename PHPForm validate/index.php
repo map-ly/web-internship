@@ -49,7 +49,7 @@
         ?>
         <h3>Form Validate</h3>
         <form method ="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-            Name: <input type="text" name="name" value="<?php echo ($failed) ? $name : ''; ?>">
+            Name: <input type="text" name="name" value="<?php echo $_POST['name'] ?? '' ?>">
             <span class="error">*<?php echo $nameErr;?></span>
             <br><br>
             Phone: <input type="text" name="phone" value="<?php echo ($failed) ? $phone : ''; ?>">

@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Loop</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loop9</title>
 </head>
 <body>
+        <div id="content"></div>
+        <input type="text" value="" id="my-value">
+        <button id="btn-add"> add</button>
 
-   <div id="content"></div>
-   <input type="text" value="" id="my-value">
-   <button  id="btn-add"> add</button>
-
-   <script>
-       var letter = ["LetterA", 'B', 'C', 'D'];
-       function callLoop() {
-           var text = '';
-           for(var i=0; i < letter.length; i++) {
+        <script>
+        var letter = ["Number1", "2", "3", "4"];
+        function callLoop(){
+            var text="";
+            for(var i=0; i < letter.length; i++) {
            text += '<div><button class="add" data-value="'+letter[i]+'">' + letter[i] +' add</button>'+'<button class="remove" data-value="'+i+'">'+letter[i]+' remove</button></div>';
            }
            document.getElementById("content").innerHTML = text;
        }
-       
-       function reCreateAdd() {
+       function createArray() {
            var add = document.querySelectorAll('.add');
            for (var i = 0; i < add.length; i++) {
                add[i].addEventListener('click', function (e) {
@@ -31,8 +29,8 @@
                });
            }
        }
-       function reCreateRemove() {
-           var remove = document.querySelectorAll('.remove');
+       function removeArray(){
+        var remove = document.querySelectorAll('.remove');
            for (var i = 0; i < remove.length; i++) {
                remove[i].addEventListener('click', function (e) {
                    var index = e.target.getAttribute('data-value');
@@ -42,10 +40,11 @@
                });
            }
        }
+       
        function init() {
            callLoop();
-           reCreateAdd();
-           reCreateRemove();
+           createArray();
+           removeArray();
        }
        init();
        var addClick = document.getElementById('btn-add');
@@ -55,6 +54,8 @@
            target.value = '';
            init();
        });
-   </script>
+        
+        
+        </script>
 </body>
 </html>

@@ -13,10 +13,18 @@
 <body>
    <p id="list"></p>
 
-    <script src="script.js"></script>
+    
     <script>
-   var letter =["LetterA", "LetterB", "LetterC", "LetterD", "LetterE"];
-   document.getElementById("list").innerHTML = letter;
+   var myarr = [];     
+     myarr.push("a");
+     myarr.push("b");
+     myarr.push("c");
+     myarr.push("d");
+     myarr.forEach(element =>{
+         console.log(element);
+     });
+
+   
 
 
   
