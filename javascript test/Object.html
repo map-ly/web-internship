@@ -10,8 +10,20 @@
     <p id="listnumber"></p>
 
     <script>
-     var number ={num1:"$100", num2:"$200",num3:"$300", num4: "$400", num5: "$500"};
-        document.getElementById("listnumber").innerHTML = number.num1 + number.num2 +number.num3 + number.num4 + number.num5;
+     var myObject ={};
+     myObject [0]=1;
+     myObject [2]=2;
+     myObject [3]=3;
+     myObject [4]=4;
+     myObject [5]=30;
+
+     Object.keys(myObject).forEach(element =>{
+        console.log(element);
+
+     });
+        
+
+
 
     </script>
     

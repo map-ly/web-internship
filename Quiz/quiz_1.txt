@@ -1,8 +1,8 @@
 1. write code to add any text into array 5 time
-
+[] [1,2,3,4,5]
 2. write code to add any text into object 5 time
-
-3. i have array [1,2,3,4,5] use For to loop to create button 2
+{} {1,2,3,4,5}
+3. i have array [1,2,3,4,5] use loop to create button 2
 button 1, use click event on button to alert that value
 button 2 use to remove that array from list
 
@@ -11,3 +11,11 @@ Note: js event click not html event click
 4. use with Question No.3 code:
 create input and button add
 fill input and click add button to add item to array
+
+1. alert
+1. remove
+<br>
+2....
+2....
+
+
