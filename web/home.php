@@ -1,5 +1,4 @@
 
-<body>
 <section class="banner_w3lspvt" id="home">
 		<ul>
 			<li>

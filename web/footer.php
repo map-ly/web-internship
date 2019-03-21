@@ -71,10 +71,10 @@
 <!-- //footer -->
 <!-- copyright -->
 <div class="copyright py-3 text-center">
-	<p>© 2019 Grand Tour. All Rights Reserved | Design by <a href="http://w3layouts.com/" target="=_blank"> W3layouts </a></p>
+	<p>© 2019 Grand Tour. All Rights Reserved | Design by <a href="http://w3layouts.com/" target="=_blank"> W3layouts 
+	</a></p>
 </div>
 <!-- //copyright -->
-
 <!-- move top -->
 <div class="move-top text-right">
 	<a href="#home" class="move-top"> 
