@@ -1,14 +1,27 @@
 <?php include('header.php'); ?>
 <?php
-	$page = $_GET['page'];	/* gets the variable $page */
-	if (!empty($page)) {
-		include($page);
-	} 	/* if $page has a value, include it */
-	else {
-		include('home.php');
-	} 	/* otherwise, include the default page */
+	$page = $_GET['page'] ?? '';
+	$content="";
+
+	switch($page){
+		case'home':
+		$content ='home.php'; break;
+		case'about':
+		$content = 'about.php'; break;
+		case'contact':
+		$content = 'contact.php'; break;
+		case'services':
+		$content = 'services.php'; break;
+		case'packages':
+		$content = 'packages.php'; break;
+		case'booking':
+		$content = 'booking.php'; break;
+		default: 
+	}
+	include $content;
 ?>
 <?php include('footer.php'); ?>
+
 
 
 ?>

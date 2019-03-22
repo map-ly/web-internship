@@ -38,12 +38,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
 			<input type="checkbox" id="drop" />
 			<ul class="menu ml-auto mt-1">
-				<li class="active"><a href="index.php?page=home.php">Home</a></li>
-				<li class=""><a href="index.php?page=about.php">About Us</a></li>
-				<li class=""><a href="index.php?page=contact.php">Contact</a></li>
-				<li class=""><a href="index.php?page=services.php">Service</a></li>
-				<li class=""><a href="index.php?page=packages.php">Package</a></li>
-				<li class="booking"><a href="index.php?page=booking.php">Booing</a></li>
+				<li class="active"><a href="index.php?page=home">Home</a></li>
+				<li class=""><a href="index.php?page=about">About Us</a></li>
+				<li class=""><a href="index.php?page=contact">Contact</a></li>
+				<li class=""><a href="index.php?page=services">Service</a></li>
+				<li class=""><a href="index.php?page=packages">Package</a></li>
+				<li class="booking"><a href="index.php?page=booking">Booing</a></li>
 			</ul>
 		</nav>
 		<!-- //nav -->
