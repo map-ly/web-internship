@@ -12,7 +12,7 @@
 <body>
 <?php
 // define variables and set to empty values
-$nameErr = $phoneErr = $emailErr = "";
+$nameErr = $phoneErr = $emailErr = $commentErr="";
 $name = $phone =$email = $comment ="";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -42,7 +42,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
   }
     
-
   if (empty($_POST["comment"])) {
     $comment = "";
   } else {
@@ -74,9 +73,10 @@ function test_input($data) {
   Comment: <textarea name="comment" rows="5" cols="40"></textarea>
   <br><br>
   <input type="submit" name="submit" value="Submit">  
-</form>
+</form><?php
 
-<?php
+if (!empty($nameErr="".&&.$phoneErr="".&&.$emailErr="".&&.$commentErr)){
+  
 echo "<h2>Your Input:</h2>";
 echo $name;
 echo "<br>";
@@ -85,6 +85,11 @@ echo "<br>";
 echo $email;
 echo "<br>";
 echo $comment;
+
 ?>
+}
+
+
+
 </body>
 </html>
