@@ -9,11 +9,17 @@
 <body>
 <?php
 $myfile = fopen("write.txt", "w") or die("Unable to open file!");
-$txt = "Php the best programming\n";
-fwrite($myfile, $txt);
-$txt = "Hallo PHP\n";
+$txt = date('d-m-y h:i:s a');
 fwrite($myfile, $txt);
 fclose($myfile);
+
+$myfile1 = fopen("write.txt", "r") or die("Unable to open file!");
+while(!feof($myfile)){
+fclose($myfile)."<br>";
+}
+
+
+
 ?>
 </body>
 </html>
