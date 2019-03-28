@@ -3,11 +3,60 @@ body{
 	  padding: 10px;
 	  background: #f1f1f1;
 	  height:100%;
-      min-width: 1000px;
       margin: 0 auto;
 	}
 .header{
-	height: 250px;
-	background-color: #ffe6e6;
+	/* height: 250px; */
+	/* background-color: #ffe6e6; */
 }
-.header, 
+.grid {
+	background-color: #ffe6e6;
+	padding: 15px 10px;
+}
+.grid img {
+	float: left;
+	margin-right: 30px;
+}
+.table {
+	border: 0;
+}
+section {
+	border-left: 15px solid orangered;
+}
+.clearfix {
+	clear:both;
+}
+
+.item {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 15px;
+}
+.item .sub:first-child {
+	padding-top: 15px;
+	border-top: 15px solid orangered;
+	color: orangered;
+	width: 20%;
+	text-transform: uppercase;
+}
+.item .sub:last-child {
+	width: 80%;
+}
+.border-left {
+	margin-left: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	border-left: 5px solid gray;
+	
+	border-left-style: dotted;
+	
+}
+.sub-item {
+	width: 100%;
+	border-bottom: 5px solid gray;
+	padding-left: 15px;
+	border-bottom-style: dotted;
+}
+.sub-item:last-child {
+	border-bottom: none;
+}

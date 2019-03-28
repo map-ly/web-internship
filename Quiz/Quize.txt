@@ -1,52 +1,32 @@
 1. how to write array in js?
-
-2. how to write object in js?
-
-3. how to add cat to array in js ?
-
-4. how to join/merge array dog and woft in js?
-
-5. how to remove item from array ?
-
-6. how does splice() can do  ?
-
-7. how many systax for loop and write it ?
-
-8. what syntax use to see in F12 console ?
-
-9. what syntax use to popup alert window message ?
-
-10. what syntax for shorthand if else ?
-
-11. write code to check  10 equal to "10" and same type ?
-
-12. how many way to get Elements ?
-
-13. create 2 object literal, 1 with a function return fullname, 2 has object first name & last name and call object 1 to get full name ?
-14. write how to click button and alert message "Button is Clicked" 
-
-
-answer:
 1. var computer = ["Dell", "Acer", "Lenovo"];
 
+X 2. how to write object in js?
 2. var person = "tall";
 
+3. how to add cat to array in js ?
 3. var list = ["Dell", "Acer"];
     list.push("Lenovo");
-   
 
+X 4. how to join/merge array dog and woft in js?
 4. function myFunction() {
     var computer = ["Dell", "Acer", "Lenovo", "Asus"];
     var x = document.getElementById("demo");
     x.innerHTML = computer.join();
+	var a = ['1'];
 
+5. how to remove item from array ?
 5. var computer = ["Dell", "Acer", "Lenovo", "Asus"];
 	document.getElementById("demo").innerHTML = computer;
 
 	function myFunction() {
 	computer.shift();
 	document.getElementById("demo").innerHTML = computer;
+
+6. how does splice() can do  ?
 6. The slice() method returns the selected elements in an array, as a new array object.
+
+X 7. how many systax for loop and write it ?
 7. syntax for loop 
 	- for
 	- for/in
@@ -90,34 +70,47 @@ answer:
 	}
 	while (i<10);
 	}
+
+8. what syntax use to see in F12 console ?
 8. The console.log() Method
 	console.log()
 	var x = 15 * 5;
 	debugger;
 	document.getElementById("demo").innerHTML = x;
 
+X 9. what syntax use to popup alert window message ?
 9. window.confirm("sometext");
 
+X 10. what syntax for shorthand if else ?
 10. if (condition) {
   	//  block of code to be executed if the condition is true
 	}
 	if (hour < 18) {
   	greeting = "Good day";
 	}
-
+	condition ? trye : false;
 	if (condition) {
   	//  block of code is true
 	} else { 
  	//  block of code is false
 	}
 
+11. write code to check  10 equal to "10" and same type ?
 11. 	var str = "10";
         var num = 10;
     
         if (10  === "10"){
         alert("num 10 equal string 10");
             }
+			
+X 12. how many way to get Elements ?
+12. 3ways to get element.
+	-by('id')
+	-by ('class')
+	-by ('function')
 
+
+X 13. create 2 object literal, 1 with a function return fullname, 2 has object first name & last name and call object 1 to get full name ?
 13. <p id="demo"></p>
     <script>
     var firstname = "Ly";
@@ -125,17 +118,29 @@ answer:
     var x = firstname  + lastname;
     document.getElementById("demo").innerHTML = x;
     </script>
-12. 3ways to get element.
-	-by('id')
-	-by ('class')
-	-by ('function')
 
+14. write how to click button and alert message "Button is Clicked" 
 14. <input type="button" id="button" value="To Click here" onclick="btn_Click()"/>
     <script>
     function btn_Click(){
     alert("Clicked");
     }
+	widnow.addEventListener('click', function () {
+		
+	});
     </script>
+
+
+
+
+
+
+
+
+
+
+
+
 
   
 

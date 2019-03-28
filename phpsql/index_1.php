@@ -33,7 +33,7 @@
         <?php
             $sql = 'select * from myguests ORDER BY id DESC LIMIT ' .$limit. ' OFFSET ' .$start;
             $result = $conn->query($sql);
-            if ($result->num_rows > 0);
+            if ($result->num_rows > 0) {
                 while ($r = $result->fetch_assoc()){
         ?>
         <tr>
@@ -49,7 +49,7 @@
         </tr>
         <?php
             }
-        endif;
+        }
         ?>
     </tbody>
     <tfoot>
