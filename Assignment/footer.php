@@ -1,6 +1,6 @@
 
-<a href="index.php">Back</a>
-<?php $conn->close(); ?>
-
+        <?php $conn->close(); ?>
+    </div>
+</div>
 </body>
 </html>
